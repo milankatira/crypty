@@ -1,13 +1,26 @@
 import { useState } from "react";
+import {
+  Navbar,
+  Footer,
+  Loader,
+  Transaction,
+  Welcome,
+  Services,
+} from "./components/index";
 import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar />
+        <Welcome />
+      </div>
 
+      <Services />
+      <Transaction />
+      <Footer />
     </div>
   );
 }
