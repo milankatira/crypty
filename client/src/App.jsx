@@ -12,12 +12,12 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div>
+      {/* <h1>od</h1> */}
       <div className="gradient-bg-welcome">
         <Navbar />
         <Welcome />
       </div>
-
       <Services />
       <Transaction />
       <Footer />
